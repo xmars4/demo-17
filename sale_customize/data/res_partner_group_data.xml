@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="group_1" model="res.partner.group">
+        <field name="name">New</field>
+        <field name="discount">5</field>
+    </record>
+
+    <record id="group_2" model="res.partner.group">
+        <field name="name">Professional</field>
+        <field name="discount">7</field>
+    </record>
+
+    <record id="group_3" model="res.partner.group">
+        <field name="name">VIP</field>
+        <field name="discount">10</field>
+        <field name="is_customizable" eval="True"/>
+    </record>
+</odoo>
