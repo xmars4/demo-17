@@ -27,6 +27,7 @@ Long description of module's purpose
         'views/res_partner_views.xml',
         'views/sale_order_views.xml',
         'views/res_partner_group_views.xml',
+        'views/product_pricelist.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
