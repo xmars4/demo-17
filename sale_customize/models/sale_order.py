@@ -6,6 +6,8 @@ from odoo import models, fields, api
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
+    shipping_type = fields.Selection([('freeship', 'Freeship'), ('pickup', 'Pickup')], string='Shipping Type', default='freeship')
+
     def action_open_discount_wizard(self):
         self.ensure_one()
         partner_group = self.partner_id.group_id

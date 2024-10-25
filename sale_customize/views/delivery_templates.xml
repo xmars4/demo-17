@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="payment_delivery_inherit" inherit_id="website_sale.payment_delivery">
+        <xpath expr="//div[@id='delivery_method']" position="after">
+            <div class="stores">
+                <div class="store_list fs-6 small text-uppercase fw-bolder" style="margin-top:15px">
+                    Danh sách cửa hàng
+                </div>
+                <t t-foreach="stores" t-as="store">
+                    <li class="list-group-item store">
+                        <t t-set="store_id" t-value="store['store_id']"/>
+                        <t t-set="store_name" t-value="store['store_name']"/>
+                        <input type="radio" name="store" t-att-value="store_id" t-att-checked="store_id == selected_store"/>
+                        <label t-att-for="'store_' + str(store_id)" t-att-id="'store_' + str(store_id)">
+                            <t t-esc="store_name"/>
+                        </label>
+                    </li>
+                </t>
+            </div>
+        </xpath>
+    </template>
+</odoo>

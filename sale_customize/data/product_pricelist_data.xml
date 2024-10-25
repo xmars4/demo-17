@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="pricelist_1" model="product.pricelist">
+        <field name="name">New</field>
+    </record>
+
+    <record id="pricelist_2" model="product.pricelist">
+        <field name="name">Professional</field>
+    </record>
+
+    <record id="pricelist_3" model="product.pricelist">
+        <field name="name">VIP</field>
+    </record>
+</odoo>

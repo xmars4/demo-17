@@ -18,19 +18,18 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['sale_stock', 'sale_management'],
+    'depends': ['sale_stock', 'sale_management', 'website_sale'],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'data/product_pricelist_data.xml',
         'data/res_partner_group_data.xml',
         'views/res_partner_views.xml',
         'views/sale_order_views.xml',
         'views/res_partner_group_views.xml',
         'views/product_pricelist.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-
+        'views/delivery_carrier_views.xml',
+        'views/delivery_templates.xml',
     ],
 }
